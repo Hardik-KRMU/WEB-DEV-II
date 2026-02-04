@@ -1,5 +1,3 @@
-
-
 // const para=document.getElementsByClassName('.para')
 // console.log(para)
 
@@ -100,20 +98,65 @@
 //     console.log(count);
 //     count+=1;
 // }  , 1000);
-const name=document.querySelector('#name')
-const btn=document.querySelector(".btn")
-const list=document.querySelector(".list")
+// const name=document.querySelector('#name')
+// const btn=document.querySelector(".btn")
+// const list=document.querySelector(".list")
 
-btn.addEventListener('click',()=>{
-    const li=document.createElement('li')
-    const dlt=document.createElement('button')
-    dlt.innerText="Delete"
-    li.innerText=name.value
-    dlt.addEventListener('click',()=>{
-        list.removeChild(li)
-    })
+// btn.addEventListener('click',()=>{
+//     const li=document.createElement('li')
+//     const dlt=document.createElement('button')
+//     dlt.innerText="Delete"
+//     li.innerText=name.value
+//     dlt.addEventListener('click',()=>{
+//         list.removeChild(li)
+//     })
 
-    list.appendChild(li)
-    li.appendChild(dlt)
-    name.value=""
-})
+//     list.appendChild(li)
+//     li.appendChild(dlt)
+//     name.value=""
+// })
+
+// console.log("starting homework..."):
+
+// setTimeout(()=>{
+//     console.log("Homework completed!");
+//     console.log("starting dinner...");
+
+//     setTimeout(()=>{
+//         console.log("Dinner is done!");
+//         console.log("getting ready to go out...");
+
+//         setTimeout(()=>{
+//             console.log("going to the playground!");
+//         },1000);//after  dinner
+
+//     },1500);//dinner time
+
+// },2000);//homework time
+
+
+// function finishHomework(callback) {
+//     console.log("Starting homework...");
+//     setTimeout(() => {
+//         console.log("Homework done!");
+//         callback();
+//         }, 2000);
+// }
+
+// function eatDinner (callback) {
+//     console.log("Starting dinner...");
+//     setTimeout(() => {
+//         console.log("Dinner done!");
+//         callback();
+//         }, 1500);
+//     }
+
+// function goToPlayground() {
+//     console.log("Going to the playground!");
+// }
+    
+// finishHomework(() => {
+//     eatDinner(() => {
+//         goToPlayground();
+//     }); 
+//  }); 
