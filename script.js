@@ -160,3 +160,68 @@
 //         goToPlayground();
 //     }); 
 //  }); 
+
+
+
+
+
+
+// function doHomework() {
+//     const p=new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let done = true; 
+//             if (done) {
+//                 console.log("Homework is done!");
+//                 resolve("Homework is done!");
+//             } else {
+//                 reject("Homework is not done!");
+//             }
+//         }, 2000);
+//     });
+//     return p;
+// }
+
+// function eatDinner() {
+//     const p=new Promise((resolve) => {
+//         setTimeout(() => {
+//             let done = true;
+//             if (done) {
+//             console.log("Dinner is done!");
+//             resolve("Dinner is done!");
+//           } else {
+//             reject("Dinner is not done!");
+//           }
+//         }, 2000);
+//     });
+    
+// }
+
+// function goToPlayground() {
+//     const p=new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//           let done = true;  
+//           if (done) {  
+//             console.log("Going to the playground!");
+//             resolve("Going to the playground!");
+//           } else {  
+//             reject("Can't go to the playground!");
+//             }
+//         }, 2000);
+//     });
+    
+// }   
+
+// doHomework() .then((msg)=>{
+//     console.log(msg)
+//     return eatDinner();
+// })
+// .then((msg)=>{
+//     console.log(msg)
+//     return goToPlayground();
+// }) .then((msg)=>{
+//     console.log(msg)
+// }).catch((error)=>{
+//     console.log(error)
+// }).finally(()=>{
+//     console.log("Go to Sleep")
+// })
