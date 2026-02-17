@@ -225,3 +225,39 @@
 // }).finally(()=>{
 //     console.log("Go to Sleep")
 // })
+
+
+// const form=document.querySelector('form')
+
+// form.addEventListener('submit',(e)=>{
+//     e.preventDefault()
+//     console.log(eventTitle.value)
+//     console.log(eventDate.value)
+//     console.log(category.value)
+//     console.log(description.value)
+// })
+
+
+ function orderFood(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Food ordered!");
+            resolve()
+        },2000)
+    })
+ }
+ function prepareFood(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Food prepare!");
+            resolve()
+        },2000)
+    })
+ }
+ async function order(){
+    await orderFood()
+    await prepareFood()
+    await deliveredFood()
+ }
+  
+ 
