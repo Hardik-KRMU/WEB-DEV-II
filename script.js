@@ -238,26 +238,35 @@
 // })
 
 
- function orderFood(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("Food ordered!");
-            resolve()
-        },2000)
-    })
- }
- function prepareFood(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("Food prepare!");
-            resolve()
-        },2000)
-    })
- }
- async function order(){
-    await orderFood()
-    await prepareFood()
-    await deliveredFood()
- }
+//  function orderFood(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Food ordered!");
+//             resolve()
+//         },2000)
+//     })
+//  }
+//  function prepareFood(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Food prepare!");
+//             resolve()
+//         },2000)
+//     })
+//  }
+//  async function order(){
+//     await orderFood()
+//     await prepareFood()
+//     await deliveredFood()
+//  }
   
- 
+ console.log("first line")
+ try{
+    let sample=234
+    consolw.log(sample)
+    console.log("Line after sample")
+
+ }catch(error){
+    console.log(error)
+ }
+ console.log("last line")
