@@ -260,13 +260,23 @@
 //     await deliveredFood()
 //  }
   
- console.log("first line")
- try{
-    let sample=234
-    consolw.log(sample)
-    console.log("Line after sample")
+//  console.log("first line")
+//  try{
+//     let sample=234
+//     consolw.log(sample)
+//     console.log("Line after sample")
 
- }catch(error){
-    console.log(error)
- }
- console.log("last line")
+//  }catch(error){
+//     console.log(error)
+//  }
+//  console.log("last line")
+
+// async  function getData(){
+//     const response=await fetch("https://jsonplaceholder.typicode.com/posts")
+//     const data=await response.json()
+//     console.log(data.products[0].title)
+//     data.products.forEach(product=>{
+//         console.log(product.title)
+//     })
+ 
+ 
